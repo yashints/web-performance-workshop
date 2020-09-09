@@ -1,7 +1,8 @@
 import Utils from './../../services/Utils.js';
 
 let lines = [];
-const dateFormat = 'DD/MM/YYYY HH:mm';
+const dateFormat = "DD/MM/YYYY HH:mm";
+
 
 let submitForm = () => {
   $('form').submit();
@@ -174,6 +175,7 @@ let Home = {
 
     $('input[type=radio][name=options]').change(() => submitForm());
 
+
     $('#from').on('dp.show', function (e) {
       $('.collapse.in').addClass('show');
     });
@@ -190,18 +192,18 @@ let Home = {
       useCurrent: true,
       showTodayButton: true,
       showClear: true,
-      showClose: true,
-      keepOpen: false,
+      showClose:true,
+      keepOpen:false,
       icons: {
-        time: 'icon-clock2',
-        date: 'icon-calendar',
-        up: 'icon-circle-up',
-        down: 'icon-circle-down',
-        previous: 'icon-circle-left',
-        next: 'icon-circle-right',
-        today: 'icon-target',
-        clear: 'icon-bin',
-        close: 'icon-cancel-circle',
+        time: 'fa fa-clock',
+        date: 'fa fa-calendar',
+        up: 'fa fa-chevron-up',
+        down: 'fa fa-chevron-down',
+        previous: 'fa fa-chevron-left',
+        next: 'fa fa-chevron-right',
+        today: 'fa fa-crosshairs',
+        clear: 'fa fa-trash',
+        close: 'fa fa-times',
       },
     });
 

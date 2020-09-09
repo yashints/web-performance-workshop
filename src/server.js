@@ -8,17 +8,7 @@ const compression = require('compression');
 
 const app = express();
 
-app.use(compression({ filter: shouldCompress }));
-
-function shouldCompress(req, res) {
-  if (req.url === '/assets/content.txt') {
-    // don't compress responses with this request header
-    console.log('response zipped');
-    return true;
-  }
-
-  return false;
-}
+app.use(compression());
 
 const router = express.Router();
 const watcher = chokidar.watch(`${__dirname}`);

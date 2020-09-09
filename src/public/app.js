@@ -1,5 +1,9 @@
 'use strict';
 
+import './globals.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 import Home from './views/pages/Home.js';
 import About from './views/pages/About.js';
 import Error404 from './views/pages/Error404.js';
@@ -26,9 +30,9 @@ const sleep = (milliseconds) => {
 }
 
 
-(async () => {  
-  // Render the Header and footer of the page  
-})();
+// (async () => {  
+//   // Render the Header and footer of the page  
+// })();
 
 // The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
 const router = async () => {

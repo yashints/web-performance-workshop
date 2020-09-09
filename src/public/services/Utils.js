@@ -1,4 +1,4 @@
-const baseUrl = 'http://127.0.0.1:3000/api';
+const baseUrl = 'https://127.0.0.1:3000/api';
 const linesUrl = 'lines';
 const timeTableUrl = 'timetable';
 

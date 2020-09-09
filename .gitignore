@@ -9,8 +9,8 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# certs
-certs/
+# parcel cache
+.parcel-cache
 
 # Windows Installer files
 *.cab

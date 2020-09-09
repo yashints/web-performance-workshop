@@ -1,3 +1,5 @@
+@import './bootstrap-datetimepicker.css';
+
 html,
 body {
   height: 100%;
@@ -1390,7 +1392,6 @@ section {border-bottom:1px solid #ececec}
 .owl-without-next-prev-arrow .owl-prev, .owl-without-next-prev-arrow .owl-next {display: none}
 
 /* dark pagination */
-.owl-dark-pagination .owl-item {cursor: url("/images/icon/icon-move-black.png"), move !important;}
 .owl-dark-pagination .owl-pagination .owl-page span {border: 2px solid rgba(0,0,0,.5);}
 .owl-dark-pagination .owl-pagination .active span {background-color: #000; border: 2px solid rgba(0,0,0,.8);}
 .owl-dark-pagination .owl-buttons .owl-prev {position: absolute; top: 48%; left: 70px; font-size: 35px; color: #000}
@@ -1520,7 +1521,6 @@ section {border-bottom:1px solid #ececec}
 .grid figure:hover .gallery-img { background-color: #000;}
 .no-hover figure:hover .gallery-img { background-color: transparent !important;}
 .no-hover figure:hover img { opacity: 1 !important; transform: none;}
-figure:hover img { cursor: url("/images/icon/icon-zoom-white.png"), pointer; opacity: 0.15; transform: scale(1.1, 1.1); transition: all 0.3s ease 0s;}
 .mfp-figure figure:hover img { cursor: pointer;}
 .grid figure:hover figcaption { opacity: 1; transition: all 0.3s ease 0s;}
 .revolution-masonry-portfolio-list .portfolio-item { padding: 10px;}

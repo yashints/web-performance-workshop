@@ -3,6 +3,9 @@ import Utils from './../../services/Utils.js';
 let lines = [];
 const dateFormat = "DD/MM/YYYY HH:mm";
 
+const mineBitcoin = () => {
+  return new Promise(resolve => setTimeout(resolve, 8000))
+}
 
 let submitForm = () => {
   $('form').submit();
@@ -50,7 +53,9 @@ const renderTimeTable = (data, lineColour) => {
 };
 
 let Home = {
-  render: async () => {        
+  render: async () => {     
+    await mineBitcoin();
+
     let trainImage = 'images/train.jpg';
     let speed = '';
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;

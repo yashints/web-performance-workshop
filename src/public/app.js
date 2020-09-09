@@ -3,53 +3,38 @@
 import './globals.js';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-import Home from './views/pages/Home.js';
-import About from './views/pages/About.js';
 import Error404 from './views/pages/Error404.js';
-import Tickets from './views/pages/Tickets.js';
-import Disruptions from './views/pages/Disruptions.js';
-import LostFound from './views/pages/LostFound.js';
-import History from './views/pages/History.js';
-import Gallery from './views/pages/Gallery.js';
-import Surprise from './views/pages/Surprise';
-
 import Navbar from './views/components/Navbar.js';
 import Footer from './views/components/Footer.js';
 
 import Utils from './services/Utils.js';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
-const routes = {
-  '/': Home,
-  '/about': About,
-  '/tickets': Tickets,
-  '/disruptions': Disruptions,
-  '/lost-found': LostFound,
-  '/history': History,
-  '/gallery': Gallery,
-  '/surprise': Surprise
+const routes = {  
+  '/': import('./views/pages/Home.js'),
+  '/about': import('./views/pages/About.js'),
+  '/tickets': import('./views/pages/Tickets.js'),
+  '/disruptions': import('./views/pages/Disruptions.js'),
+  '/lost-found': import('./views/pages/LostFound.js'),
+  '/history': import('./views/pages/History.js'),
+  '/gallery': import('./views/pages/Gallery.js'),
+  '/surprise': import('./views/pages/Surprise.js')
 };
 
-const mineBitcoin = () => {
-  return new Promise(resolve => setTimeout(resolve, 8000))
-}
-
-
-// (async () => {  
-//   // Render the Header and footer of the page  
-// })();
-
-// The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
-const router = async () => {
-  await mineBitcoin();
+(async () => {  
   const header = null || document.getElementById('header_container');
   header.innerHTML = await Navbar.render();
   await Navbar.after_render();
   const footer = null || document.getElementById('footer_container');
   footer.innerHTML = await Footer.render();
   await Footer.after_render();
+})();
+
+// The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
+const router = async () => { 
   
   const content = null || document.getElementById('page_container');
+  content.innerHTML = `<div>Loading...</div>`;     
 
   // Get the parsed URl from the addressbar
   let request = Utils.parseRequestURL();
@@ -62,7 +47,14 @@ const router = async () => {
 
   // Get the page from our hash of supported routes.
   // If the parsed URL is not in our list of supported routes, select the 404 page instead
-  let page = routes[parsedURL] ? routes[parsedURL] : Error404;  
+  let page;
+  if(routes[parsedURL]) {
+    const module = await routes[parsedURL];
+    page = module.default;
+  } else {
+    page = await import('./views/pages/Error404.js').default;
+  }
+
   content.innerHTML = await page.render();
   await page.after_render();
 };

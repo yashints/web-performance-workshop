@@ -1,4 +1,8 @@
-import { default as showADog } from '../../js/random-dog';
+async function addImage(surprise, window) {  
+  const module = await import('../../js/random-dog');
+  const showADog = module.default;
+  showADog(surprise, window);
+}
 
 let Surprise = {
   render: async () => {
@@ -24,7 +28,7 @@ let Surprise = {
     const surpriseBtn = document.getElementById('surpriseBtn');
     const surprise = document.getElementById('surprise');
     surpriseBtn.addEventListener('click', function() {      
-      showADog(surprise, window);
+      addImage(surprise, window);
     });
   },
 };

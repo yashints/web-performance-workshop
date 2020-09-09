@@ -1,0 +1,37 @@
+{
+  "name": "web_performance_workshop",
+  "version": "1.0.0",
+  "description": "Web performance master workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yashints",
+    "web performance",
+    "workshop"    
+  ],
+  "author": {
+    "name": "Yaser Adel Mehraban (Yashints)",
+    "email": "me@yashints.dev",
+    "url": "https://yashints.dev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.10.2",
+    "@babel/plugin-transform-runtime": "7.10.1",
+    "babel-core": "6.26.3",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.7.0",
+    "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.2",
+    "body-parser": "^1.19.0",
+    "chokidar": "^3.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "underscore": "^1.10.2"
+  }
+}

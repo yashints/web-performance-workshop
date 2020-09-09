@@ -1,0 +1,443 @@
+{  
+  "97": {
+    "alerts": [
+      {
+        "alert_id": "361161",
+        "line_id": "97",
+        "from_date": "1590957000",
+        "to_date": "1590961800",
+        "alert_type": "cancellation",
+        "altered_services_text": "<div class='extra'><p class='cancellation-note'>Please check the table below for the next two departures after this cancelled service for your relevant station.</p><table class='cancelled'><tr><td>Werribee</td><td class='current'>7:10 AM</td><td >7:19 AM</td><td >7:29 AM</td></tr><tr><td>Hoppers Crossing</td><td class='current'>7:13 AM</td><td >7:22 AM</td><td >7:32 AM</td></tr><tr><td>Williams Landing</td><td class='current'>7:17 AM</td><td >7:26 AM</td><td >7:36 AM</td></tr><tr><td>Aircraft</td><td class='current'>7:19 AM</td><td >7:28 AM</td><td >7:38 AM</td></tr><tr><td>Laverton</td><td class='current'>7:21 AM</td><td >7:30 AM</td><td >7:38 AM</td></tr><tr><td>Newport</td><td class='current'>7:29 AM</td><td >7:32 AM</td><td >7:38 AM</td></tr><tr><td>Footscray</td><td class='current'>7:36 AM</td><td >7:40 AM</td><td >7:45 AM</td></tr><tr><td>South Kensington</td><td class='current'>7:39 AM</td><td >7:48 AM</td><td >7:58 AM</td></tr><tr><td>North Melbourne</td><td class='current'>7:42 AM</td><td >7:45 AM</td><td >7:51 AM</td></tr><tr><td>Southern Cross</td><td class='current'>7:45 AM</td><td >7:48 AM</td><td >7:54 AM</td></tr><tr><td>Flinders Street</td><td class='current'>7:50 AM</td><td >7:52 AM</td><td >7:58 AM</td></tr></table></div>",
+        "alert_text": "The 7:10am Werribee to Flinders Street service has been cancelled.\n",
+        "trip_id": "6418",
+        "direction": "1",
+        "affected_stations": [
+          "Werribee",
+          "Hoppers Crossing",
+          "Williams Landing",
+          "Aircraft",
+          "Laverton",
+          "Newport",
+          "Footscray",
+          "South Kensington",
+          "North Melbourne",
+          "Southern Cross",
+          "Flinders Street"
+        ]
+      }
+    ],
+    "line_name": "Werribee",
+    "colour": "blue",
+    "planned_works_list": [
+      {
+        "id": 360209,
+        "title": "Buses replace trains between Newport and Werribee",
+        "classification": "project-works",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1590933600,
+        "end_date": 1591276500,
+        "end_date_classification": "exact",
+        "times_description": "8.15pm to last train each night",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between Newport and Werribee</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-npt-wer-010620-040620/",
+        "sub_work": []
+      },
+      {
+        "id": 360213,
+        "title": "Buses replace trains between Newport and Werribee",
+        "classification": "project-works",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591279200,
+        "end_date": 1591535700,
+        "end_date_classification": "exact",
+        "times_description": "",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between Newport and Werribee</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-npt-wer-050620-070620/",
+        "sub_work": []
+      },
+      {
+        "id": 360566,
+        "title": "Changes to your service",
+        "classification": "maintenance",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591422300,
+        "end_date": 1591488000,
+        "end_date_classification": "exact",
+        "times_description": "From 9pm Saturday to 8am Sunday",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "train",
+            "content": "<p>Trains run direct to and from Flinders Street Station, not via the City Loop.</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/ctys-wer-wil-suy-cgb-ufd-060620-070620/",
+        "sub_work": []
+      },
+      {
+        "id": 360468,
+        "title": "Buses replace trains between Newport and Werribee",
+        "classification": "project-works",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591538400,
+        "end_date": 1591881300,
+        "end_date_classification": "exact",
+        "times_description": "",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between Newport and Werribee</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-npt-wer-080620-110620/",
+        "sub_work": []
+      },
+      {
+        "id": 360708,
+        "title": "Buses replace trains between North Melbourne Werribee and Williamstown",
+        "classification": "maintenance",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591939860,
+        "end_date": 1592143140,
+        "end_date_classification": "exact",
+        "times_description": "From 8.15pm Friday to last train Sunday",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between North Melbourne Werribee and Williamstown</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-nme-wer-wil-120620-140620/",
+        "sub_work": [
+          {
+            "classification": "maintenance",
+            "location_type": "line-section",
+            "location": [
+              {
+                "line_station_id": 448,
+                "line_station_name": "North Melbourne",
+                "latitude": "-37.807029",
+                "longitude": "144.941860"
+              },
+              {
+                "line_station_id": 590,
+                "line_station_name": "Werribee",
+                "latitude": "-37.899659",
+                "longitude": "144.660944"
+              }
+            ],
+            "end_date": 1592107140,
+            "end_date_classification": "exact",
+            "times_description": null,
+            "link": "https://www.metrotrains.com.au/planned-work/br-nme-wer-wil-120620-140620/"
+          },
+          {
+            "classification": "maintenance",
+            "location_type": "line-section",
+            "location": [
+              {
+                "line_station_id": 448,
+                "line_station_name": "North Melbourne",
+                "latitude": "-37.807029",
+                "longitude": "144.941860"
+              },
+              {
+                "line_station_id": 602,
+                "line_station_name": "Williamstown",
+                "latitude": "-37.867669",
+                "longitude": "144.905060"
+              }
+            ],
+            "end_date": 1592107140,
+            "end_date_classification": "exact",
+            "times_description": null,
+            "link": "https://www.metrotrains.com.au/planned-work/br-nme-wer-wil-120620-140620/"
+          }
+        ]
+      },
+      {
+        "id": 360649,
+        "title": "Buses replace trains between Newport and Werribee",
+        "classification": "project-works",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1592402400,
+        "end_date": 1592745300,
+        "end_date_classification": "exact",
+        "times_description": "",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between Newport and Werribee</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-npt-wer-180620-210620/",
+        "sub_work": []
+      }
+    ],
+    "planned_works": [
+      {
+        "body": "For details on planned works for this line, see http://www.metrotrains.com.au/network-line/werribee#planned-works"
+      }
+    ],
+    "residential_info_list": [
+      {
+        "from": 1573135200,
+        "to": 1598882340,
+        "changes_to_travel": "Aircraft Station\n"
+      },
+      {
+        "from": 1591624800,
+        "to": 1592143140,
+        "changes_to_travel": "Hoppers Crossing Station\n"
+      }
+    ],
+    "extra_services": "There are no scheduled Extra Services at this time"
+  },  
+  "87": {
+    "line_name": "Mernda",
+    "colour": "green",
+    "planned_works_list": [
+      {
+        "id": 358923,
+        "title": "Buses replace trains between Epping and Mernda ",
+        "classification": "project-works",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1590933600,
+        "end_date": 1591278420,
+        "end_date_classification": "exact",
+        "times_description": "From 8.50pm to last train each night",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between Epping and Mernda</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-epp-mdd-010620-040620/",
+        "sub_work": []
+      },
+      {
+        "id": 360698,
+        "title": "Buses replace trains between Parliament and Clifton Hill",
+        "classification": "maintenance",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591680660,
+        "end_date": 1591797540,
+        "end_date_classification": "exact",
+        "times_description": "8.20pm to last train each night",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "bus",
+            "content": "<p>Buses replace trains between Parliament and Clifton Hill</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/br-par-chl-090620-100620/",
+        "sub_work": [
+          {
+            "classification": "maintenance",
+            "location_type": "line-section",
+            "location": [
+              {
+                "line_station_id": 408,
+                "line_station_name": "Parliament",
+                "latitude": "-37.812763",
+                "longitude": "144.973534"
+              },
+              {
+                "line_station_id": 483,
+                "line_station_name": "Clifton Hill",
+                "latitude": "-37.788637",
+                "longitude": "144.995390"
+              }
+            ],
+            "end_date": 1591761540,
+            "end_date_classification": "exact",
+            "times_description": null,
+            "link": "https://www.metrotrains.com.au/planned-work/br-par-chl-090620-100620/"
+          }
+        ]
+      },
+      {
+        "id": 360821,
+        "title": "Changes to your service",
+        "classification": "maintenance",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591940700,
+        "end_date": 1592143140,
+        "end_date_classification": "exact",
+        "times_description": "From 9pm Friday to last train Sunday",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "train",
+            "content": "<p>Trains run direct to and from Flinders Street Station, not via the City Loop.</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/ctys-mdd-hbe-120620-140620/",
+        "sub_work": []
+      }
+    ],
+    "planned_works": [
+      {
+        "body": "For details on planned works for this line, see http://www.metrotrains.com.au/network-line/mernda#planned-works"
+      }
+    ],
+    "residential_info_list": [
+      {
+        "from": 1548511200,
+        "to": 1593525540,
+        "changes_to_travel": "Bus stop relocation at Reservoir Station\n"
+      },
+      {
+        "from": 1590933600,
+        "to": 1598850600,
+        "changes_to_travel": "Reservoir Station\n"
+      }
+    ],
+    "extra_services": "There are no scheduled Extra Services at this time",
+    "alerts": "Good service - trains are running on time to five minutes"
+  },
+  "82": {
+    "line_name": "Alamein",
+    "colour": "light-green",
+    "planned_works_list": [
+      {
+        "id": 360570,
+        "title": "Changes to your service",
+        "classification": "maintenance",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591681500,
+        "end_date": 1591797540,
+        "end_date_classification": "exact",
+        "times_description": "8.50pm to last train each night",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "train",
+            "content": "<p>Trains run direct to and from Flinders Street Station, not via the City Loop.</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/ctys-beg-lil-alm-gwy-090620-100620/",
+        "sub_work": []
+      },
+      {
+        "id": 360815,
+        "title": "Changes to your service",
+        "classification": "maintenance",
+        "location": { "latitude": 0, "longitude": 0 },
+        "start_date": 1591940700,
+        "end_date": 1592143140,
+        "end_date_classification": "exact",
+        "times_description": "From 9pm Friday to last train Sunday",
+        "changes_to_travel": "",
+        "instructions": [
+          {
+            "type": "train",
+            "content": "<p>Trains run direct to and from Flinders Street Station, not via the City Loop.</p>\n"
+          }
+        ],
+        "link": "https://www.metrotrains.com.au/planned-work/ctys-beg-lil-alm-gwy-120620-140620/",
+        "sub_work": []
+      }
+    ],
+    "planned_works": [
+      {
+        "body": "For details on planned works for this line, see http://www.metrotrains.com.au/network-line/alamein#planned-works"
+      }
+    ],
+    "extra_services": "There are no scheduled Extra Services at this time",
+    "alerts": "Good service - trains are running on time to five minutes"
+  },
+  "metadata": {
+    "alert_categories": {
+      "minor": {
+        "label": "Minor Delays",
+        "colour": "#E87800",
+        "border_colour": "#ae6619"
+      },
+      "major": {
+        "label": "Major Delays",
+        "colour": "#EF4135",
+        "border_colour": "#b50c00"
+      },
+      "suspended": {
+        "label": "Suspended",
+        "colour": "#3D3D3D",
+        "border_colour": "#000000"
+      },
+      "works": {
+        "label": "Works Alert",
+        "colour": "#FFD500",
+        "border_colour": "#dfba01"
+      },
+      "travel": {
+        "label": "Travel Alert",
+        "colour": "#D3ECF4",
+        "border_colour": "#bdd7e0"
+      },
+      "cancellation": {
+        "label": "Cancellation",
+        "colour": "#7e547d",
+        "border_colour": "#7e547d"
+      },
+      "good-service": {
+        "label": "Good Service",
+        "colour": null,
+        "border_colour": null
+      }
+    },
+    "period_values": {
+      "1": "Weekday Peak:(6am-9am, 4pm-7pm)",
+      "2": "Weekday All Day",
+      "3": "Weekend"
+    },
+    "info_url": "https://www.metrotrains.com.au/appinfo",
+    "info_url_wp8": "https://www.metrotrains.com.au/appinfowp8",
+    "empty_alert_strings": {
+      "good_service": "Good service - trains are running on time to five minutes",
+      "extra_services": "There are no scheduled Extra Services at this time",
+      "planned_works": "There are no scheduled Planned Works at this time"
+    },
+    "all_lines_tag": "all_lines",
+    "alert_neutral_colour": "#dddddd",
+    "alert_neutral_border_colour": "#c5c5c5",
+    "morning_times_description": "This is a description of morning times",
+    "active_timetable_num": "20201",
+    "max_timetable_num": "20201",
+    "public_holidays": [
+      { "date": "20190101", "timetable_day": "1" },
+      { "date": "20190126", "timetable_day": "1" },
+      { "date": "20190311", "timetable_day": "1" },
+      { "date": "20190128", "timetable_day": "1" },
+      { "date": "20190419", "timetable_day": "2" },
+      { "date": "20190422", "timetable_day": "1" },
+      { "date": "20190425", "timetable_day": "1" },
+      { "date": "20190610", "timetable_day": "1" },
+      { "date": "20190927", "timetable_day": "1" },
+      { "date": "20191105", "timetable_day": "1" },
+      { "date": "20191225", "timetable_day": "2" },
+      { "date": "20191226", "timetable_day": "1" },
+      { "date": "20200101", "timetable_day": "1" },
+      { "date": "20200127", "timetable_day": "1" },
+      { "date": "20200309", "timetable_day": "1" },
+      { "date": "20200410", "timetable_day": "2" },
+      { "date": "20200413", "timetable_day": "1" }
+    ]
+  }
+}

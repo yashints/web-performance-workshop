@@ -51,11 +51,19 @@ const renderTimeTable = (data, lineColour) => {
 
 let Home = {
   render: async () => {        
+    let trainImage = 'images/train.jpg';
+    let speed = '';
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if(connection && (connection.effectiveType === '2g' || connection.saveData)) {
+      trainImage = 'images/train-lowres.jpg';
+      speed = 'low-speed';
+    }
+
     lines = await Utils.getLines();
     let keys = Object.keys(lines);
     let view = /*html*/ `
-        <div class="col-lg-12 text-center time-table-header">
-          <img src="images/train.jpg"/>
+        <div class="col-lg-12 text-center time-table-header ${speed}">
+          <img src="${trainImage}"/>
         </div>
         <div class="card-tall col-lg-12">
           <div class="card-body">

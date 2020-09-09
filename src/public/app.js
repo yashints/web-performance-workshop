@@ -9,6 +9,7 @@ import Error404 from './views/pages/Error404.js';
 import Tickets from './views/pages/Tickets.js';
 import Disruptions from './views/pages/Disruptions.js';
 import LostFound from './views/pages/LostFound.js';
+import History from './views/pages/History.js';
 
 import Navbar from './views/components/Navbar.js';
 import Footer from './views/components/Footer.js';
@@ -21,7 +22,8 @@ const routes = {
   '/about': About,
   '/tickets': Tickets,
   '/disruptions': Disruptions,
-  '/lost-found': LostFound
+  '/lost-found': LostFound,
+  '/history': History
 };
 
 const sleep = (milliseconds) => {

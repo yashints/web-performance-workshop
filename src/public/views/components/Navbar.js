@@ -29,6 +29,9 @@ let Navbar = {
               <a class="nav-link" href="#/lost-found">Lost and found</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#/history">Our history</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#/about">About</a>
             </li>
           </ul>         

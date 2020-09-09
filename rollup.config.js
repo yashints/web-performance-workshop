@@ -26,6 +26,7 @@ export default {
         { src: 'src/api', dest: 'dist' },
         { src: 'src/certs', dest: 'dist' },
         { src: 'src/config', dest: 'dist' },
+        { src: 'src/public/assets', dest: 'dist/public' },
         { src: 'src/public/images/*', dest: 'dist/public/images' }
       ],
       copyOnce: true,

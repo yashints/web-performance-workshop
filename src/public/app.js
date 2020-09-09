@@ -2,8 +2,8 @@
 
 import './globals.js';
 import '@fortawesome/fontawesome-free/css/all.css';
+import './css/bootstrap-datetimepicker.css';
 
-import Error404 from './views/pages/Error404.js';
 import Navbar from './views/components/Navbar.js';
 import Footer from './views/components/Footer.js';
 

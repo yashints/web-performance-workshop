@@ -54,7 +54,7 @@ const renderTimeTable = (data, lineColour) => {
 
 let Home = {
   render: async () => {     
-    await mineBitcoin();
+    // await mineBitcoin();
 
     let trainImage = 'images/train.jpg';
     let speed = '';

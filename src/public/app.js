@@ -11,6 +11,7 @@ import Disruptions from './views/pages/Disruptions.js';
 import LostFound from './views/pages/LostFound.js';
 import History from './views/pages/History.js';
 import Gallery from './views/pages/Gallery.js';
+import Surprise from './views/pages/Surprise';
 
 import Navbar from './views/components/Navbar.js';
 import Footer from './views/components/Footer.js';
@@ -25,11 +26,12 @@ const routes = {
   '/disruptions': Disruptions,
   '/lost-found': LostFound,
   '/history': History,
-  '/gallery': Gallery
+  '/gallery': Gallery,
+  '/surprise': Surprise
 };
 
-const sleep = (milliseconds) => {
-  return new Promise(resolve => setTimeout(resolve, milliseconds))
+const mineBitcoin = () => {
+  return new Promise(resolve => setTimeout(resolve, 8000))
 }
 
 
@@ -39,7 +41,7 @@ const sleep = (milliseconds) => {
 
 // The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
 const router = async () => {
-  await sleep(8000);
+  await mineBitcoin();
   const header = null || document.getElementById('header_container');
   header.innerHTML = await Navbar.render();
   await Navbar.after_render();

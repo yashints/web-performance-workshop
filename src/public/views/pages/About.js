@@ -1,11 +1,15 @@
 let About = {
-    render : async () => {
-        let view =  /*html*/`
-            <div class="card border-0 col-lg-12 about">
+  render: async () => {
+    let view = /*html*/ `
+            <div class="resizer">
+              <label>Adjust width:</label>
+              <input id="range" type="range" value="100" min="20" max="100">
+            </div>  
+            <div class="card border-0 col-lg-12 about" id="aboutDiv">              
               <div class="card-img-crop">
                 <img class="card-img-top" src="/images/about.jpg" alt="Wonderland">
               </div>              
-              <div class="card-body">                
+              <div class="card-body">                              
                 <h4 class="card-title"> About </h4>
                 <p class="card-text">
                   Wonderland Sydney (originally known as Australia's Wonderland), 
@@ -38,11 +42,42 @@ let About = {
                 </p>
               </div>                
             </section>
-        `
-        return view
-    },
-    after_render: async () => {}
-        
-}
+        `;
+    return view;
+  },
+  after_render: async () => {
+    if (window.ResizeObserver) {
+      const divElem = document.getElementById('aboutDiv');
+      const image = document.querySelector('.card-img-top');
+      const h4 = document.querySelector('.card-title');
+      const paragraphs = document.querySelectorAll('.card-text');
+      const slider = document.querySelector('input[type="range"]');
+      slider.addEventListener('input', () => {
+        divElem.style.width = slider.value + '%';
+      });
+
+      const resizeObserver = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          if (entry.contentBoxSize) {
+            if (entry.contentBoxSize[0].inlineSize < 300) {
+              image.style.display = 'none';
+            } else {
+              image.style.display = 'block';
+            }
+            h4.style.fontSize = Math.max(1.5, entry.contentBoxSize[0].inlineSize / 300) + `rem`;
+            console.log(h4.style);
+            paragraphs.forEach((p) => {
+              p.style.fontSize = Math.max(1, entry.contentBoxSize[0].inlineSize / 800) + `rem`;
+            });
+          }
+        }
+      });
+
+      resizeObserver.observe(divElem);
+    } else {
+      console.warn('Resize observer not supported!');
+    }
+  },
+};
 
 export default About;

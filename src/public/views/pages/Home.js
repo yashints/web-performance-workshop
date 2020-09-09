@@ -186,8 +186,9 @@ let Home = {
       submitForm();
     });
 
-    $('input[type=radio][name=options]').change(() => submitForm());
-
+    $('input[name=options]').on('click', () => {
+      submitForm();
+    });
 
     $('#from').on('dp.show', function (e) {
       $('.collapse.in').addClass('show');

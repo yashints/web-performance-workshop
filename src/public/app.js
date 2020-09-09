@@ -10,6 +10,7 @@ import Tickets from './views/pages/Tickets.js';
 import Disruptions from './views/pages/Disruptions.js';
 import LostFound from './views/pages/LostFound.js';
 import History from './views/pages/History.js';
+import Gallery from './views/pages/Gallery.js';
 
 import Navbar from './views/components/Navbar.js';
 import Footer from './views/components/Footer.js';
@@ -23,7 +24,8 @@ const routes = {
   '/tickets': Tickets,
   '/disruptions': Disruptions,
   '/lost-found': LostFound,
-  '/history': History
+  '/history': History,
+  '/gallery': Gallery
 };
 
 const sleep = (milliseconds) => {

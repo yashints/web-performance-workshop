@@ -286,6 +286,18 @@ section.pricing {
   }
 }
 
+.lazy-loading-container h1 {  
+  margin-bottom: 3em;
+}
+
+.lazy-loading-container .image-box {
+  margin-bottom: 300px;
+}
+
+.lazy-loading-container .image-box img {
+  max-width: 100%;
+}
+
 /* ===================================
     Typography
 ====================================== */
